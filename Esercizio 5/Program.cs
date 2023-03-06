@@ -30,6 +30,9 @@ namespace Esercizio_5
                 }
             }
             Console.WriteLine("I numeri positivi sono: "+pos+"\nI numeri negativi sono: "+neg);
+            int ppos = (pos*100)/d;
+            int npos = (neg*100)/d;
+            Console.WriteLine("La percentuale di numeri pos è "+pos+"\nMentre percentuale numeri neg è "+neg);
         }
     }
 }
