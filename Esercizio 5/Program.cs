@@ -19,22 +19,17 @@ namespace Esercizio_5
             {
                 Console.WriteLine("Inserisci numero:");
                 int x=int.Parse(Console.ReadLine());
+                if (x >= 0)
+                {
+                    pos++;
+                }
+
+                else
+                {
+                    neg++;
+                }
             }
             Console.WriteLine("I numeri positivi sono: "+pos+"\nI numeri negativi sono: "+neg);
-            posneg(pos, x, neg);
-        }
-        static void posneg(int pos,int x, int neg)
-        {
-            if(x>=0)
-            {
-                pos++;
-            }
-            
-            else
-            {
-                neg++;
-            }
-            
         }
     }
 }
