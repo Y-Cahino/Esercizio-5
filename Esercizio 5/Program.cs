@@ -10,6 +10,8 @@ namespace Esercizio_5
     {
         static void Main(string[] args)
         {
+            int pos=0;
+            int neg = 0;
             Console.WriteLine("Inserire dimensione array: ");
             int d=int.Parse(Console.ReadLine());
             int[] a = new int[d];
@@ -17,20 +19,20 @@ namespace Esercizio_5
             {
                 Console.WriteLine("Inserisci numero:");
                 int x=int.Parse(Console.ReadLine());
-                
             }
-            posneg(a, x);
+            Console.WriteLine("I numeri positivi sono: "+pos+"\nI numeri negativi sono: "+neg);
+            posneg(pos, x, neg);
         }
-        static void posneg(int []a, int x)
+        static void posneg(int pos,int x, int neg)
         {
-            for(int pos=0; x>=0;pos++)
+            if(x>=0)
             {
-                Console.WriteLine(pos);
+                pos++;
             }
             
-            for(int neg = 0; x < 0;neg++)
+            else
             {
-                Console.WriteLine(neg);
+                neg++;
             }
             
         }
